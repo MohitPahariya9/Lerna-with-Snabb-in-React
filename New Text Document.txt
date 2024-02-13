@@ -1,0 +1,11 @@
+npx lerna init --packages="packages/*" //create folder then move the web app
+
+npx lerna clean -y
+
+npx lerna bootstrap --hoist //help dependencies rquired
+
+npm install server-api -w webApp// to run one app inside another
+
+"postinstall": "lerna bootstrap",
+
+ "start":"node index.js",
